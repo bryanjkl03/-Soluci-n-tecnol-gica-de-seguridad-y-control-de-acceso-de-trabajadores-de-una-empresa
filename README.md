@@ -32,8 +32,3 @@ Desarrollar un sistema tecnológico que permita gestionar y controlar el acceso 
 Se genera mediante un desarrollo software que integra: base de datos, algoritmos de verificación, interfaz web/móvil, y hardware de lectura (opcional).
 
 ---
-
-
-        MOSTRAR "Credencial no válida"
-    FIN SI
-FIN ProcesoAutenticacion
