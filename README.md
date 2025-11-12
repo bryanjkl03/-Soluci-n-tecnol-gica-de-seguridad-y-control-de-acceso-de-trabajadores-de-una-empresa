@@ -76,3 +76,25 @@ Se genera mediante un desarrollo software que integra: base de datos, algoritmos
 ---
 
 ---
+### Pseudocódigo - Proceso de Autenticación
+
+```pseudocodigo
+INICIO ProcesoAutenticacion
+    LEER credencial_ingresada
+    BUSCAR trabajador_en_bd CON credencial_ingresada
+    
+    SI trabajador_en_bd ENCONTRADO ENTONCES
+        SI trabajador_activo ENTONCES
+            REGISTRAR acceso_exitoso
+            PERMITIR acceso
+            GUARDAR registro(hora_entrada, trabajador_id)
+            MOSTRAR "Acceso permitido"
+        SINO
+            REGISTRAR acceso_denegado
+            MOSTRAR "Trabajador inactivo"
+        FIN SI
+    SINO
+        REGISTRAR credencial_invalida
+        MOSTRAR "Credencial no válida"
+    FIN SI
+FIN ProcesoAutenticacion
