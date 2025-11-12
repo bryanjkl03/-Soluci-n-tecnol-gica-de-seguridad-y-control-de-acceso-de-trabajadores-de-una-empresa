@@ -98,3 +98,12 @@ INICIO ProcesoAutenticacion
         MOSTRAR "Credencial no válida"
     FIN SI
 FIN ProcesoAutenticacion
+```
+
+
+
+## Pseudocódigo - Proceso de Autenticación
+
+![Pseudocódigo del Sistema de Autenticación](./images/pseudocodigo-autenticacion.png)
+
+Diagrama del proceso de autenticación de trabajadores
