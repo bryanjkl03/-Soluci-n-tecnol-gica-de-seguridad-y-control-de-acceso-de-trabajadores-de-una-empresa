@@ -104,6 +104,6 @@ FIN ProcesoAutenticacion
 
 ## Pseudocódigo - Proceso de Autenticación
 
-![Pseudocódigo del Sistema de Autenticación](./images/pseudocodigo-autenticacion.png)
+![Pseudocódigo del Sistema de Autenticación](./Diagrama-de-flujo.png)
 
 Diagrama del proceso de autenticación de trabajadores
