@@ -31,4 +31,48 @@ Desarrollar un sistema tecnológico que permita gestionar y controlar el acceso 
 ### 5. ¿Cómo lo genera y que objetos se requiere?
 Se genera mediante un desarrollo software que integra: base de datos, algoritmos de verificación, interfaz web/móvil, y hardware de lectura (opcional).
 
+## Fase I: Requerimientos del Sistema
+
+### Requerimiento 1: Autenticación de Trabajadores
+
+| Nombre       | Autenticación de Trabajadores |
+|--------------|--------------------------------|
+| Descripción  | Sistema para verificar la identidad de los trabajadores al ingresar/salir |
+| Entradas     | Credenciales (ID, huella, tarjeta, etc.) |
+| Salidas      | Resultado de autenticación, registro de acceso |
+
+### Requerimiento 2: Gestión de Base de Datos
+
+| Nombre       | Gestión de Base de Datos |
+|--------------|--------------------------|
+| Descripción  | Almacenamiento y gestión de información de trabajadores y accesos |
+| Entradas     | Datos de empleados, registros de acceso |
+| Salidas      | Base de datos actualizada, consultas de información |
+
+### Requerimiento 3: Registro de Accesos
+
+| Nombre       | Registro de Accesos |
+|--------------|---------------------|
+| Descripción  | Registrar todas las entradas y salidas de los trabajadores |
+| Entradas     | Datos de acceso (hora, fecha, empleado) |
+| Salidas      | Historial de accesos, reportes |
+
+### Requerimiento 4: Generación de Reportes
+
+| Nombre       | Generación de Reportes |
+|--------------|------------------------|
+| Descripción  | Crear reportes de asistencia y movimientos |
+| Entradas     | Datos de registros, filtros de búsqueda |
+| Salidas      | Reportes en diversos formatos |
+
+### Requerimiento 5: Interfaz de Administración
+
+| Nombre       | Interfaz de Administración |
+|--------------|----------------------------|
+| Descripción  | Panel para gestionar el sistema y usuarios |
+| Entradas     | Comandos de administración, configuraciones |
+| Salidas      | Sistema configurado, operaciones ejecutadas |
+
+---
+
 ---
