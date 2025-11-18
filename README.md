@@ -376,3 +376,19 @@ Diagrama del proceso de autenticación de trabajadores
   </tr>
 </table>
 
+## Documentacion atributos de la clase
+| Clase             | Atributo         | Codificación       | Objetivo                                                     |
+|-------------------|------------------|---------------------|--------------------------------------------------------------|
+| Usuario           | id               | string                  | Identificador único del usuario (formato 11AA11)            |
+| Usuario           | nombre           | string              | Nombre del trabajador                                        |
+| Usuario           | apellido         | string            | Apellido del trabajador                                      |
+| RegistroAcceso    | idUsuario        | string           | ID del usuario que realiza el acceso                         |
+| RegistroAcceso    | tipoAcceso       | string          | Tipo de acceso ("INGRESO" o "SALIDA")                       |
+| RegistroAcceso    | fechaHora        | date           | Fecha y hora del registro automático                         |
+| InterfazPrincipal | usuarios         | List<Usuario>            | Lista de usuarios registrados en el sistema                  |
+| InterfazPrincipal | registros        | List<RegistroAcceso>          | Lista histórica de registros de acceso                       |
+| GestorArchivos    | ARCHIVO_USUARIOS | string    | Nombre del archivo para persistir usuarios                   |
+| GestorArchivos    | ARCHIVO_REGISTROS| string   | Nombre del archivo para persistir registros                  |
+| RegistroUsuario    | campoNombre| JTextField   | Campo para nombre usuario                  |
+| RegistroUsuario    | 	campoApellido| JTextField   | Campo para apellido usuario                  |
+
