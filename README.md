@@ -395,21 +395,6 @@ Diagrama del proceso de autenticación de trabajadores
 # Fase III:
 # Documentación Métodos de la clase
 
-### Clase InterfazPrincipal
-
-| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
-|-------------------|---------|-----------|---------------------|------------------|
-| InterfazPrincipal | Ninguna | Ninguno (constructor) | Inicializa la ventana principal y carga los datos. | public InterfazPrincipal() |
-| inicializarComponentes | Ninguna | void | Configura los botones, listas y elementos gráficos. | private void inicializarComponentes() |
-| cargarDatos | Ninguna | void | Carga usuarios y registros desde los archivos mediante GestorArchivos. | private void cargarDatos() |
-| actualizarListaUsuarios | Ninguna | void | Actualiza visualmente la lista JList con los usuarios cargados. | private void actualizarListaUsuarios() |
-| actionPerformed | ActionEvent e | void | Maneja todas las acciones de los botones del menú principal. | public void actionPerformed(ActionEvent e) |
-| mostr
-
-
-
-
-
 ### Clase Usuario
 
 | Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
