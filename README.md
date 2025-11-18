@@ -395,121 +395,20 @@ Diagrama del proceso de autenticación de trabajadores
 # Fase III:
 # Documentación Métodos de la clase
 
-# Clase InterfazPrincipal
+### Clase InterfazPrincipal
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| InterfazPrincipal | Ninguna | Ninguno (constructor) | Inicializa la ventana principal y carga los datos. | public InterfazPrincipal() |
+| inicializarComponentes | Ninguna | void | Configura los botones, listas y elementos gráficos. | private void inicializarComponentes() |
+| cargarDatos | Ninguna | void | Carga usuarios y registros desde los archivos mediante GestorArchivos. | private void cargarDatos() |
+| actualizarListaUsuarios | Ninguna | void | Actualiza visualmente la lista JList con los usuarios cargados. | private void actualizarListaUsuarios() |
+| actionPerformed | ActionEvent e | void | Maneja todas las acciones de los botones del menú principal. | public void actionPerformed(ActionEvent e) |
+| mostr
 
 
-# InterfazPrincipal()
-| Nombre del Método | InterfazPrincipal() |
-|-------------------|---------------------|
-| Entrada (lista de parámetros) | Ninguna |
-| Resultado (tipo de dato de retorno) | Ninguno (constructor) |
-| Solución planteada | Inicializa la interfaz principal del sistema y configura los componentes gráficos. |
-| Firma del Método | public InterfazPrincipal() |
 
 
-# inicializarComponentes()
-| Nombre del Método | inicializarComponentes |
-|-------------------|------------------------|
-| Entrada (lista de parámetros) | Ninguna |
-| Resultado (tipo de dato de retorno) | void |
-| Solución planteada | Crea y configura todos los elementos visuales y botones de la interfaz. |
-| Firma del Método | public void inicializarComponentes() |
-
-# cargarDatos()
-| Nombre del Método | cargarDatos |
-|-------------------|-------------|
-| Entrada | Ninguna |
-| Resultado | void |
-| Solución planteada | Carga desde archivo la lista de usuarios y registros almacenados. |
-| Firma del Método | public void cargarDatos() |
-
-# actualizarListaUsuarios()
-| Nombre del Método | actualizarListaUsuarios |
-|-------------------|-------------------------|
-| Entrada | Ninguna |
-| Resultado | void |
-| Solución planteada | Actualiza visualmente la lista de usuarios en pantalla usando el modelo de lista. |
-| Firma del Método | public void actualizarListaUsuarios() |
-
-# actionPerformed(ActionEvent)
-| Nombre del Método | actionPerformed |
-|-------------------|-----------------|
-| Entrada | ActionEvent e |
-| Resultado | void |
-| Solución planteada | Gestiona todas las acciones de botones y ejecuta la operación correspondiente. |
-| Firma del Método | public void actionPerformed(ActionEvent e) |
-
-# mostrarRegistros()
-| Nombre del Método | mostrarRegistros |
-|-------------------|------------------|
-| Entrada | Ninguna |
-| Resultado | void |
-| Solución planteada | Muestra la ventana con el historial completo de registros de acceso. |
-| Firma del Método | public void mostrarRegistros() |
-
-# agregarUsuario(Usuario)
-| Nombre del Método | agregarUsuario |
-|-------------------|----------------|
-| Entrada | Usuario u |
-| Resultado | void |
-| Solución planteada | Añade un nuevo usuario a la lista y actualiza su visualización. |
-| Firma del Método | public void agregarUsuario(Usuario u) |
-
-# eliminarUsuario(String)
-| Nombre del Método | eliminarUsuario |
-|-------------------|-----------------|
-| Entrada | String id |
-| Resultado | boolean |
-| Solución planteada | Elimina un usuario según su ID y devuelve true si fue eliminado. |
-| Firma del Método | public boolean eliminarUsuario(String id) |
-
-# buscarUsuario(String)
-| Nombre del Método | buscarUsuario |
-|-------------------|---------------|
-| Entrada | String id |
-| Resultado | Usuario |
-| Solución planteada | Busca un usuario en la lista por su ID y lo retorna. |
-| Firma del Método | public Usuario buscarUsuario(String id) |
-
-# agregarRegistro(RegistroAcceso)
-| Nombre del Método | agregarRegistro |
-|-------------------|-----------------|
-| Entrada | RegistroAcceso r |
-| Resultado | void |
-| Solución planteada | Añade un nuevo registro de acceso al historial del sistema. |
-| Firma del Método | public void agregarRegistro(RegistroAcceso r) |
-
-# getUsuarios()
-| Nombre del Método | getUsuarios |
-|-------------------|-------------|
-| Entrada | Ninguna |
-| Resultado | List<Usuario> |
-| Solución planteada | Devuelve la lista completa de usuarios registrados. |
-| Firma del Método | public List<Usuario> getUsuarios() |
-
-# getRegistros()
-| Nombre del Método | getRegistros |
-|-------------------|--------------|
-| Entrada | Ninguna |
-| Resultado | List<RegistroAcceso> |
-| Solución planteada | Devuelve la lista completa de registros almacenados. |
-| Firma del Método | public List<RegistroAcceso> getRegistros() |
-
-# puedeIngresar(String)
-| Nombre del Método | puedeIngresar |
-|-------------------|---------------|
-| Entrada | String idUsuario |
-| Resultado | boolean |
-| Solución planteada | Determina si el usuario puede registrar un ingreso según su último estado. |
-| Firma del Método | public boolean puedeIngresar(String idUsuario) |
-
-# puedeSalir(String)
-| Nombre del Método | puedeSalir |
-|-------------------|------------|
-| Entrada | String idUsuario |
-| Resultado | boolean |
-| Solución planteada | Verifica si el usuario puede registrar una salida según su estado anterior. |
-| Firma del Método | public boolean puedeSalir(String idUsuario) |
 
 ### Clase Usuario
 
@@ -521,3 +420,51 @@ Diagrama del proceso de autenticación de trabajadores
 | getApellido | Ninguna | String | Retorna el apellido del usuario. | public String getApellido() |
 | getIniciales | Ninguna | String | Devuelve las iniciales del nombre y apellido. | public String getIniciales() |
 | toString | Ninguna | String | Representación textual del usuario. | public String toString() |
+
+### Clase RegistroAcceso
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| RegistroAcceso | String idUsuario, String tipoAcceso | Ninguno (constructor) | Crea un registro de acceso con su tipo y fecha. | public RegistroAcceso(String idUsuario, String tipoAcceso) |
+| getIdUsuario | Ninguna | String | Retorna el ID del usuario registrado. | public String getIdUsuario() |
+| getTipoAcceso | Ninguna | String | Retorna el tipo de acceso (INGRESO o SALIDA). | public String getTipoAcceso() |
+| getFechaHora | Ninguna | Date | Retorna la fecha y hora del registro. | public Date getFechaHora() |
+| getFechaHoraFormateada | Ninguna | String | Retorna la fecha formateada. | public String getFechaHoraFormateada() |
+| toString | Ninguna | String | Representación textual del registro. | public String toString() |
+
+
+### Clase GestorArchivos
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| guardarUsuarios | List<Usuario> | void | Guarda la lista de usuarios en un archivo. | public void guardarUsuarios(List<Usuario> usuarios) |
+| cargarUsuarios | Ninguna | List<Usuario> | Carga usuarios desde archivo. | public List<Usuario> cargarUsuarios() |
+| guardarRegistros | List<RegistroAcceso> | void | Guarda registros de acceso en archivo. | public void guardarRegistros(List<RegistroAcceso> registros) |
+| cargarRegistros | Ninguna | List<RegistroAcceso> | Carga registros desde archivo. | public List<RegistroAcceso> cargarRegistros() |
+| generarIdUnico | List<Usuario> | String | Genera un ID único para nuevos usuarios. | public String generarIdUnico(List<Usuario> usuarios) |
+| tieneIngresoPendiente | String idUsuario, List<RegistroAcceso> | boolean | Verifica si el usuario no ha salido aún. | public boolean tieneIngresoPendiente(String idUsuario, List<RegistroAcceso> registros) |
+| puedeIngresar | String idUsuario, List<RegistroAcceso> | boolean | Verifica si puede ingresar. | public boolean puedeIngresar(String idUsuario, List<RegistroAcceso> registros) |
+| puedeSalir | String idUsuario, List<RegistroAcceso> | boolean | Verifica si puede salir. | public boolean puedeSalir(String idUsuario, List<RegistroAcceso> registros) |
+
+
+### Clase InterfazPrincipal
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| InterfazPrincipal | Ninguna | Ninguno (constructor) | Inicializa la interfaz principal. | public InterfazPrincipal() |
+| inicializarComponentes | Ninguna | void | Configura todos los componentes gráficos. | private void inicializarComponentes() |
+| cargarDatos | Ninguna | void | Carga usuarios y registros desde archivos. | private void cargarDatos() |
+| actualizarListaUsuarios | Ninguna | void | Actualiza la vista de la lista de usuarios. | private void actualizarListaUsuarios() |
+| actionPerformed | ActionEvent e | void | Maneja eventos de los botones. | public void actionPerformed(ActionEvent e) |
+| mostrarRegistros | Ninguna | void | Muestra el historial de accesos. | public void mostrarRegistros() |
+| agregarUsuario | Usuario u | void | Añade un usuario a la lista. | public void agregarUsuario(Usuario u) |
+| eliminarUsuario | String id | boolean | Elimina un usuario según ID. | public boolean eliminarUsuario(String id) |
+| buscarUsuario | String id | Usuario | Busca un usuario por ID. | public Usuario buscarUsuario(String id) |
+| agregarRegistro | RegistroAcceso r | void | Añade un registro de acceso. | public void agregarRegistro(RegistroAcceso r) |
+| getUsuarios | Ninguna | List<Usuario> | Devuelve la lista de usuarios. | public List<Usuario> getUsuarios() |
+| getRegistros | Ninguna | List<RegistroAcceso> | Devuelve todos los registros. | public List<RegistroAcceso> getRegistros() |
+| puedeIngresar | String id | boolean | Verifica si el usuario puede ingresar. | public boolean puedeIngresar(String id) |
+| puedeSalir | String id | boolean | Verifica si el usuario puede salir. | public boolean puedeSalir(String id) |
+
+
+
