@@ -392,3 +392,121 @@ Diagrama del proceso de autenticación de trabajadores
 | RegistroUsuario    | campoNombre| JTextField   | Campo para nombre usuario                  |
 | RegistroUsuario    | 	campoApellido| JTextField   | Campo para apellido usuario                  |
 
+# Fase III:
+# Documentación Métodos de la clase
+
+# Clase InterfazPrincipal
+
+
+# InterfazPrincipal()
+| Nombre del Método | InterfazPrincipal() |
+|-------------------|---------------------|
+| Entrada (lista de parámetros) | Ninguna |
+| Resultado (tipo de dato de retorno) | Ninguno (constructor) |
+| Solución planteada | Inicializa la interfaz principal del sistema y configura los componentes gráficos. |
+| Firma del Método | public InterfazPrincipal() |
+
+
+# inicializarComponentes()
+| Nombre del Método | inicializarComponentes |
+|-------------------|------------------------|
+| Entrada (lista de parámetros) | Ninguna |
+| Resultado (tipo de dato de retorno) | void |
+| Solución planteada | Crea y configura todos los elementos visuales y botones de la interfaz. |
+| Firma del Método | public void inicializarComponentes() |
+
+# cargarDatos()
+| Nombre del Método | cargarDatos |
+|-------------------|-------------|
+| Entrada | Ninguna |
+| Resultado | void |
+| Solución planteada | Carga desde archivo la lista de usuarios y registros almacenados. |
+| Firma del Método | public void cargarDatos() |
+
+# actualizarListaUsuarios()
+| Nombre del Método | actualizarListaUsuarios |
+|-------------------|-------------------------|
+| Entrada | Ninguna |
+| Resultado | void |
+| Solución planteada | Actualiza visualmente la lista de usuarios en pantalla usando el modelo de lista. |
+| Firma del Método | public void actualizarListaUsuarios() |
+
+# actionPerformed(ActionEvent)
+| Nombre del Método | actionPerformed |
+|-------------------|-----------------|
+| Entrada | ActionEvent e |
+| Resultado | void |
+| Solución planteada | Gestiona todas las acciones de botones y ejecuta la operación correspondiente. |
+| Firma del Método | public void actionPerformed(ActionEvent e) |
+
+# mostrarRegistros()
+| Nombre del Método | mostrarRegistros |
+|-------------------|------------------|
+| Entrada | Ninguna |
+| Resultado | void |
+| Solución planteada | Muestra la ventana con el historial completo de registros de acceso. |
+| Firma del Método | public void mostrarRegistros() |
+
+# agregarUsuario(Usuario)
+| Nombre del Método | agregarUsuario |
+|-------------------|----------------|
+| Entrada | Usuario u |
+| Resultado | void |
+| Solución planteada | Añade un nuevo usuario a la lista y actualiza su visualización. |
+| Firma del Método | public void agregarUsuario(Usuario u) |
+
+# eliminarUsuario(String)
+| Nombre del Método | eliminarUsuario |
+|-------------------|-----------------|
+| Entrada | String id |
+| Resultado | boolean |
+| Solución planteada | Elimina un usuario según su ID y devuelve true si fue eliminado. |
+| Firma del Método | public boolean eliminarUsuario(String id) |
+
+# buscarUsuario(String)
+| Nombre del Método | buscarUsuario |
+|-------------------|---------------|
+| Entrada | String id |
+| Resultado | Usuario |
+| Solución planteada | Busca un usuario en la lista por su ID y lo retorna. |
+| Firma del Método | public Usuario buscarUsuario(String id) |
+
+# agregarRegistro(RegistroAcceso)
+| Nombre del Método | agregarRegistro |
+|-------------------|-----------------|
+| Entrada | RegistroAcceso r |
+| Resultado | void |
+| Solución planteada | Añade un nuevo registro de acceso al historial del sistema. |
+| Firma del Método | public void agregarRegistro(RegistroAcceso r) |
+
+# getUsuarios()
+| Nombre del Método | getUsuarios |
+|-------------------|-------------|
+| Entrada | Ninguna |
+| Resultado | List<Usuario> |
+| Solución planteada | Devuelve la lista completa de usuarios registrados. |
+| Firma del Método | public List<Usuario> getUsuarios() |
+
+# getRegistros()
+| Nombre del Método | getRegistros |
+|-------------------|--------------|
+| Entrada | Ninguna |
+| Resultado | List<RegistroAcceso> |
+| Solución planteada | Devuelve la lista completa de registros almacenados. |
+| Firma del Método | public List<RegistroAcceso> getRegistros() |
+
+# puedeIngresar(String)
+| Nombre del Método | puedeIngresar |
+|-------------------|---------------|
+| Entrada | String idUsuario |
+| Resultado | boolean |
+| Solución planteada | Determina si el usuario puede registrar un ingreso según su último estado. |
+| Firma del Método | public boolean puedeIngresar(String idUsuario) |
+
+# puedeSalir(String)
+| Nombre del Método | puedeSalir |
+|-------------------|------------|
+| Entrada | String idUsuario |
+| Resultado | boolean |
+| Solución planteada | Verifica si el usuario puede registrar una salida según su estado anterior. |
+| Firma del Método | public boolean puedeSalir(String idUsuario) |
