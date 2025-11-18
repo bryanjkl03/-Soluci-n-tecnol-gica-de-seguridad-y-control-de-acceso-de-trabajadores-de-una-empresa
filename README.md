@@ -520,3 +520,5 @@ Diagrama del proceso de autenticación de trabajadores
 
 ### Licencia de uso
 <img width="393" height="365" alt="Image" src="https://github.com/user-attachments/assets/67dbff83-327b-4dc6-a1c1-86a94e405e24" />
+
+# Fase IV: 
