@@ -1,6 +1,6 @@
 # Solución tecnológica de seguridad y control de acceso de trabajadores de una empresa
 
-# Sistema de Control de Acceso y Seguridad para Trabajadores
+## Sistema de Control de Acceso y Seguridad para Trabajadores
 
 ## Fase 0: Contextualización del Proyecto
 
