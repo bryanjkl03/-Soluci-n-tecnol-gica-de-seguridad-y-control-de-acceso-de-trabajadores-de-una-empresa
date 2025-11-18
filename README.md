@@ -499,3 +499,24 @@ Diagrama del proceso de autenticación de trabajadores
 |-------------------|---------|-----------|---------------------|------------------|
 | Licencia | Ninguna | Ninguno | Muestra la licencia en pantalla. | public Licencia() |
 | inicializarComponentes | Ninguna | void | Configura el área de texto con la licencia. | private void inicializarComponentes() |
+
+
+### Prototipo de diseño de la interfaz de usuario
+
+# Ventana Principal
+<img width="506" height="425" alt="Image" src="https://github.com/user-attachments/assets/53cd7440-377b-403e-b1fd-99c4a76f0f5b" />
+
+# Registro de usuarios
+<img width="531" height="401" alt="Image" src="https://github.com/user-attachments/assets/9d09664f-5741-494c-9435-676b1b5d05f8" />
+
+# Eliminación de los usuarios
+<img width="539" height="399" alt="Image" src="https://github.com/user-attachments/assets/fbc5cdd3-7a0f-49bb-b54f-e0868da1a27e" />
+
+# Ingreso de usuarios
+<img width="578" height="407" alt="Image" src="https://github.com/user-attachments/assets/7871f085-eb54-4425-8821-aad0224fef30" />
+
+# Salida de usuarios
+<img width="575" height="357" alt="Image" src="https://github.com/user-attachments/assets/5c6149d4-0716-4094-8bad-d3b4a538723d" />
+
+# Lincencia de uso
+<img width="393" height="365" alt="Image" src="https://github.com/user-attachments/assets/67dbff83-327b-4dc6-a1c1-86a94e405e24" />
