@@ -453,3 +453,49 @@ Diagrama del proceso de autenticación de trabajadores
 
 
 
+### Clase RegistroUsuario
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| RegistroUsuario | InterfazPrincipal | Ninguno | Abre ventana para registrar usuarios. | public RegistroUsuario(InterfazPrincipal ip) |
+| inicializarComponentes | Ninguna | void | Configura los elementos del formulario. | private void inicializarComponentes() |
+| actionPerformed | ActionEvent e | void | Maneja los botones del formulario. | public void actionPerformed(ActionEvent e) |
+| registrarUsuario | Ninguna | void | Crea y agrega un nuevo usuario. | private void registrarUsuario() |
+
+
+### Clase EliminarUsuario
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| EliminarUsuario | InterfazPrincipal | Ninguno | Ventana para eliminar un usuario. | public EliminarUsuario(InterfazPrincipal ip) |
+| inicializarComponentes | Ninguna | void | Configura los controles del formulario. | private void inicializarComponentes() |
+| actionPerformed | ActionEvent e | void | Maneja la acción del botón eliminar. | public void actionPerformed(ActionEvent e) |
+| eliminarUsuario | Ninguna | void | Elimina un usuario según ID ingresado. | private void eliminarUsuario() |
+
+
+### Clase IngresoUsuario
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| IngresoUsuario | InterfazPrincipal | Ninguno | Ventana para registrar ingresos. | public IngresoUsuario(InterfazPrincipal ip) |
+| inicializarComponentes | Ninguna | void | Configura los elementos de ingreso. | private void inicializarComponentes() |
+| actionPerformed | ActionEvent e | void | Controla los botones. | public void actionPerformed(ActionEvent e) |
+| registrarIngreso | Ninguna | void | Registra un ingreso si es permitido. | private void registrarIngreso() |
+
+
+### Clase SalidaUsuario
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| SalidaUsuario | InterfazPrincipal | Ninguno | Ventana para registrar salidas. | public SalidaUsuario(InterfazPrincipal ip) |
+| inicializarComponentes | Ninguna | void | Configura los elementos de salida. | private void inicializarComponentes() |
+| actionPerformed | ActionEvent e | void | Maneja las acciones de botones. | public void actionPerformed(ActionEvent e) |
+| registrarSalida | Ninguna | void | Registra una salida si el usuario puede salir. | private void registrarSalida() |
+
+
+### Clase Licencia
+
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| Licencia | Ninguna | Ninguno | Muestra la licencia en pantalla. | public Licencia() |
+| inicializarComponentes | Ninguna | void | Configura el área de texto con la licencia. | private void inicializarComponentes() |
