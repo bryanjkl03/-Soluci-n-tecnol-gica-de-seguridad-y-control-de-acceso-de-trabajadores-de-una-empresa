@@ -510,3 +510,49 @@ Diagrama del proceso de autenticación de trabajadores
 | Resultado | boolean |
 | Solución planteada | Verifica si el usuario puede registrar una salida según su estado anterior. |
 | Firma del Método | public boolean puedeSalir(String idUsuario) |
+
+# Clase Usuario
+# Usuario(String, String, String)
+| Nombre del Método | Usuario |
+| Entrada | String id, String nombre, String apellido |
+| Resultado | Ninguno (constructor) |
+| Solución planteada | Crea un usuario con sus datos básicos. |
+| Firma del Método | public Usuario(String id, String nombre, String apellido) |
+
+
+# getId()
+| Nombre del Método | getId |
+| Entrada | Ninguna |
+| Resultado | String |
+| Solución planteada | Retorna el ID del usuario. |
+| Firma del Método | public String getId() |
+
+
+# getNombre()
+| Nombre del Método | getNombre |
+| Entrada | Ninguna |
+| Resultado | String |
+| Solución planteada | Retorna el nombre del usuario. |
+| Firma del Método | public String getNombre() |
+
+# getApellido()
+| Nombre del Método | getApellido |
+| Entrada | Ninguna |
+| Resultado | String |
+| Solución planteada | Retorna el apellido del usuario. |
+| Firma del Método | public String getApellido() |
+
+
+# getIniciales()
+| Nombre del Método | getIniciales |
+| Entrada | Ninguna |
+| Resultado | String |
+| Solución planteada | Genera las iniciales del usuario. |
+| Firma del Método | public String getIniciales() |
+
+# toString()
+| Nombre del Método | toString |
+| Entrada | Ninguna |
+| Resultado | String |
+| Solución planteada | Retorna la representación en texto del usuario. |
+| Firma del Método | public String toString() |
