@@ -1,5 +1,10 @@
 # Solución tecnológica de seguridad y control de acceso de trabajadores de una empresa
 
+## Autores
+- Brayan José Pérez Orozco
+- Andres Nicolas Ruiz Salinas
+- David Santiago Ruiz Payanene
+
 ## Sistema de Control de Acceso y Seguridad para Trabajadores
 
 ## Fase 0: Contextualización del Proyecto
