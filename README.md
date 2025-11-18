@@ -511,48 +511,13 @@ Diagrama del proceso de autenticación de trabajadores
 | Solución planteada | Verifica si el usuario puede registrar una salida según su estado anterior. |
 | Firma del Método | public boolean puedeSalir(String idUsuario) |
 
-# Clase Usuario
-# Usuario(String, String, String)
-| Nombre del Método | Usuario |
-| Entrada | String id, String nombre, String apellido |
-| Resultado | Ninguno (constructor) |
-| Solución planteada | Crea un usuario con sus datos básicos. |
-| Firma del Método | public Usuario(String id, String nombre, String apellido) |
+### Clase Usuario
 
-
-# getId()
-| Nombre del Método | getId |
-| Entrada | Ninguna |
-| Resultado | String |
-| Solución planteada | Retorna el ID del usuario. |
-| Firma del Método | public String getId() |
-
-
-# getNombre()
-| Nombre del Método | getNombre |
-| Entrada | Ninguna |
-| Resultado | String |
-| Solución planteada | Retorna el nombre del usuario. |
-| Firma del Método | public String getNombre() |
-
-# getApellido()
-| Nombre del Método | getApellido |
-| Entrada | Ninguna |
-| Resultado | String |
-| Solución planteada | Retorna el apellido del usuario. |
-| Firma del Método | public String getApellido() |
-
-
-# getIniciales()
-| Nombre del Método | getIniciales |
-| Entrada | Ninguna |
-| Resultado | String |
-| Solución planteada | Genera las iniciales del usuario. |
-| Firma del Método | public String getIniciales() |
-
-# toString()
-| Nombre del Método | toString |
-| Entrada | Ninguna |
-| Resultado | String |
-| Solución planteada | Retorna la representación en texto del usuario. |
-| Firma del Método | public String toString() |
+| Nombre del Método | Entrada | Resultado | Solución planteada | Firma del Método |
+|-------------------|---------|-----------|---------------------|------------------|
+| Usuario | String id, String nombre, String apellido | Ninguno (constructor) | Crea un usuario con sus datos básicos. | public Usuario(String id, String nombre, String apellido) |
+| getId | Ninguna | String | Retorna el ID del usuario. | public String getId() |
+| getNombre | Ninguna | String | Retorna el nombre del usuario. | public String getNombre() |
+| getApellido | Ninguna | String | Retorna el apellido del usuario. | public String getApellido() |
+| getIniciales | Ninguna | String | Devuelve las iniciales del nombre y apellido. | public String getIniciales() |
+| toString | Ninguna | String | Representación textual del usuario. | public String toString() |
