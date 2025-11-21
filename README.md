@@ -527,3 +527,48 @@ Diagrama del proceso de autenticación de trabajadores
 <img width="393" height="365" alt="Image" src="https://github.com/user-attachments/assets/67dbff83-327b-4dc6-a1c1-86a94e405e24" />
 
 # Fase IV: 
+
+1.	Implementación de los métodos ( construcción de la parte lógica )
+Generación de ID Único
+•	Proceso: Se crea un ID con formato "11AA11" (2 números + 2 letras + 2 números)
+•	Verificación de unicidad: Se comprueba que el ID generado no exista en la lista actual de usuarios
+•	Bucle de generación: Se repite el proceso hasta encontrar un ID único
+o	Gestión de Archivos
+•	Serialización: Los objetos Usuario y RegistroAcceso se convierten a bytes para guardar en archivos .dat
+•	Recuperación de datos: Se cargan las listas desde archivos al iniciar la aplicación
+•	Manejo de errores: Si no existen archivos, se retornan listas vacías
+o	Validación de Accesos
+•	Control de estado: Se verifica el último registro del usuario para determinar si puede ingresar o salir
+•	Secuencia obligatoria: Ingreso → Salida → Ingreso (no se permiten dos ingresos consecutivos)
+2.	Codificación de formulas
+•	Fórmula de ID Aleatorio
+•	ID = (número 0-9) + (número 0-9) + (letra A-Z) + (letra A-Z) + (número 0-9) + (número 0-9)
+•	
+•	Fórmula de Iniciales
+•	Iniciales = (primeras 3 letras del nombre) + "*****" + espacio + (primeras 3 letras del apellido) + "*****"
+•	Fórmula de Fecha/Hora
+•	Fecha Formateada = "DD/MM/YYYY   HH: MM: SS"
+3.	Asignaciones
+Asignación de Referencias
+•	Interfaz Principal se asigna como referencia en todas las ventanas secundarias
+•	Listas de usuarios y registros se asignan desde Gestor Archivos al iniciar
+Asignación de Eventos
+•	Cada botón tiene asignado un ActionListener
+•	Las acciones se asignan a métodos específicos (registrar, eliminar, etc.)
+Asignación de Datos
+•	Al crear usuario: ID único + nombre + apellido
+•	Al crear registro: ID usuario + tipo acceso + fecha/hora actual
+4.	Condicionales
+•	Validación de Campos Vacíos
+•	SI (campo vacío) ENTONCES mostrar error Y retornar.
+•	Verificación de Existencia
+•	SI (usuario no encontrado) ENTONCES mostrar error Y limpiar campo
+•	Control de Estado de Acceso
+•	SI (puedeIngresar = falso) ENTONCES mostrar "Debe registrar salida primero"
+•	SI (puedeSalir = falso) ENTONCES mostrar "Debe registrar ingreso primero"
+•	Confirmación de Identidad
+•	SI (usuario confirma) ENTONCES registrar acceso
+•	SI NO ENTONCES limpiar campo Y solicitar nuevo intento
+•	Persistencia de Datos.
+•	SI (operación exitosa) ENTONCES guardar en archivo Y actualizar interfaz
+Documentación aplicación utilizando javadoc
