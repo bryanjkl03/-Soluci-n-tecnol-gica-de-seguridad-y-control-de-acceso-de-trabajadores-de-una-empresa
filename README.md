@@ -575,3 +575,50 @@ o	Validación de Accesos
 
 
 # Fase V: 
+
+## Pantalla principal
+- Pantalla que el usuario vera al iniciar el programa donde se muestra los trabajadores con sus respectivos ID, Nombres y Apellidos
+<img width="413" height="336" alt="Image" src="https://github.com/user-attachments/assets/a6621b75-c719-40a5-abc0-d285d2800f41" />
+
+## Registrar Usuario
+- En Registrar el usuario se nos abrirá una pestaña donde nos pedirá nuestro nombre y apellido al darle al botón de aceptar se nos generara un ID automáticamente con el cual ya quedaremos registrados en la aplicacion
+
+<img width="359" height="431" alt="Image" src="https://github.com/user-attachments/assets/32844d2e-45be-4fe5-b5cc-965188aec402" />
+
+## Eliminar
+- En eliminar podremos eliminar un trabajador que ya no se encuentre en la empresa solo el poner ID del usuario que desea eliminar y le da en eliminar se nos abrirá una nueva pestaña donde será la confirmación de eliminación después de confirmar se nos eliminara el usuario
+
+<img width="353" height="172" alt="Image" src="https://github.com/user-attachments/assets/7aa51fe6-e4f0-408c-a2c3-ec58a0a6d41b" />
+
+<img width="349" height="406" alt="Image" src="https://github.com/user-attachments/assets/94ede618-4df1-42a5-a9f4-0294814c6f9e" />
+
+## Ingreso
+- En ingreso pondremos el ID del usuario que esta ingresando con esto se nos abrirá una pestaña donde nos mostrara una confirmación con las iniciales del nombre y apellido y al darle que si nos mostrara hora y fecha del ingreso y quedara registrado en el sistema
+
+<img width="363" height="387" alt="Image" src="https://github.com/user-attachments/assets/1ae2e6dc-2ed3-4958-8057-95a79ea16fc5" />
+
+<img width="326" height="200" alt="image" src="https://github.com/user-attachments/assets/016ca8ce-59ac-41e7-a1b2-4d40100fa1c4" />
+
+## Salida
+- En salida será similar al ingreso donde podremos nuestro ID le damos en salida, confirmamos que si sea nuestro usuario en la pestaña de confirmación donde aparecen nuestras iniciales del nombre y apellido y después nos mostrara hora y fecha de la salida quedara guardada en registro
+
+<img width="353" height="169" alt="image" src="https://github.com/user-attachments/assets/2e4cfbcb-ac54-4420-b058-83464bcf6932" />
+<img width="338" height="411" alt="image" src="https://github.com/user-attachments/assets/db3ece8e-7e5d-485c-89a3-22b1392ba076" />
+
+## Registro
+- Aca el usuario podrá ver el registro de los ingresos y salidas que han hecho es como la base de datos de nuestra aplicación
+
+<img width="400" height="344" alt="image" src="https://github.com/user-attachments/assets/e203ec35-c783-4948-8870-97ec128a46c3" />
+
+## Licencia 
+Aca estan los términos y condiciones de nuestra aplicación 
+
+<img width="411" height="344" alt="image" src="https://github.com/user-attachments/assets/a6fae7c4-676c-4ba7-9580-edaec98758db" />
+
+
+
+
+
+
+
+
