@@ -528,24 +528,25 @@ Diagrama del proceso de autenticación de trabajadores
 
 # Fase IV: 
 
-1.	Implementación de los métodos ( construcción de la parte lógica )
-Generación de ID Único
-•	Proceso: Se crea un ID con formato "11AA11" (2 números + 2 letras + 2 números)
-•	Verificación de unicidad: Se comprueba que el ID generado no exista en la lista actual de usuarios
-•	Bucle de generación: Se repite el proceso hasta encontrar un ID único
+ ## 1.	Implementación de los métodos ( construcción de la parte lógica )
+### Generación de ID Único
+-	Proceso: Se crea un ID con formato "11AA11" (2 números + 2 letras + 2 números)
+-	Verificación de unicidad: Se comprueba que el ID generado no exista en la lista actual de usuarios
+-	Bucle de generación: Se repite el proceso hasta encontrar un ID único
 o	Gestión de Archivos
-•	Serialización: Los objetos Usuario y RegistroAcceso se convierten a bytes para guardar en archivos .dat
-•	Recuperación de datos: Se cargan las listas desde archivos al iniciar la aplicación
-•	Manejo de errores: Si no existen archivos, se retornan listas vacías
+
+-    Serialización: Los objetos Usuario y RegistroAcceso se convierten a bytes para guardar en archivos .dat
+-	Recuperación de datos: Se cargan las listas desde archivos al iniciar la aplicación
+-	Manejo de errores: Si no existen archivos, se retornan listas vacías
 o	Validación de Accesos
-•	Control de estado: Se verifica el último registro del usuario para determinar si puede ingresar o salir
-•	Secuencia obligatoria: Ingreso → Salida → Ingreso (no se permiten dos ingresos consecutivos)
-2.	Codificación de formulas
-•	Fórmula de ID Aleatorio
-•	ID = (número 0-9) + (número 0-9) + (letra A-Z) + (letra A-Z) + (número 0-9) + (número 0-9)
-•	
-•	Fórmula de Iniciales
-•	Iniciales = (primeras 3 letras del nombre) + "*****" + espacio + (primeras 3 letras del apellido) + "*****"
+-	Control de estado: Se verifica el último registro del usuario para determinar si puede ingresar o salir
+-	Secuencia obligatoria: Ingreso → Salida → Ingreso (no se permiten dos ingresos consecutivos)
+
+## 2.	Codificación de formulas
+-	Fórmula de ID Aleatorio
+-	ID = (número 0-9) + (número 0-9) + (letra A-Z) + (letra A-Z) + (número 0-9) + (número 0-9)	
+-	Fórmula de Iniciales
+-	Iniciales = (primeras 3 letras del nombre) + "*****" + espacio + (primeras 3 letras del apellido) + "*****"
 •	Fórmula de Fecha/Hora
 •	Fecha Formateada = "DD/MM/YYYY   HH: MM: SS"
 3.	Asignaciones
