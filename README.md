@@ -547,29 +547,31 @@ o	Validación de Accesos
 -	ID = (número 0-9) + (número 0-9) + (letra A-Z) + (letra A-Z) + (número 0-9) + (número 0-9)	
 -	Fórmula de Iniciales
 -	Iniciales = (primeras 3 letras del nombre) + "*****" + espacio + (primeras 3 letras del apellido) + "*****"
-•	Fórmula de Fecha/Hora
-•	Fecha Formateada = "DD/MM/YYYY   HH: MM: SS"
-3.	Asignaciones
-Asignación de Referencias
-•	Interfaz Principal se asigna como referencia en todas las ventanas secundarias
-•	Listas de usuarios y registros se asignan desde Gestor Archivos al iniciar
-Asignación de Eventos
-•	Cada botón tiene asignado un ActionListener
-•	Las acciones se asignan a métodos específicos (registrar, eliminar, etc.)
-Asignación de Datos
-•	Al crear usuario: ID único + nombre + apellido
-•	Al crear registro: ID usuario + tipo acceso + fecha/hora actual
-4.	Condicionales
-•	Validación de Campos Vacíos
-•	SI (campo vacío) ENTONCES mostrar error Y retornar.
-•	Verificación de Existencia
-•	SI (usuario no encontrado) ENTONCES mostrar error Y limpiar campo
-•	Control de Estado de Acceso
-•	SI (puedeIngresar = falso) ENTONCES mostrar "Debe registrar salida primero"
-•	SI (puedeSalir = falso) ENTONCES mostrar "Debe registrar ingreso primero"
-•	Confirmación de Identidad
-•	SI (usuario confirma) ENTONCES registrar acceso
-•	SI NO ENTONCES limpiar campo Y solicitar nuevo intento
-•	Persistencia de Datos.
-•	SI (operación exitosa) ENTONCES guardar en archivo Y actualizar interfaz
-Documentación aplicación utilizando javadoc
+-	Fórmula de Fecha/Hora
+-	Fecha Formateada = "DD/MM/YYYY   HH: MM: SS"
+## 3.	Asignaciones
+### Asignación de Referencias
+-	Interfaz Principal se asigna como referencia en todas las ventanas secundarias
+-	Listas de usuarios y registros se asignan desde Gestor Archivos al iniciar
+### Asignación de Eventos
+-	Cada botón tiene asignado un ActionListener
+-	Las acciones se asignan a métodos específicos (registrar, eliminar, etc.)
+### Asignación de Datos
+-	Al crear usuario: ID único + nombre + apellido
+-	Al crear registro: ID usuario + tipo acceso + fecha/hora actual
+## 4.	Condicionales
+-	Validación de Campos Vacíos
+-	SI (campo vacío) ENTONCES mostrar error Y retornar.
+-	Verificación de Existencia
+-	SI (usuario no encontrado) ENTONCES mostrar error Y limpiar campo
+-	Control de Estado de Acceso
+-	SI (puedeIngresar = falso) ENTONCES mostrar "Debe registrar salida primero"
+-	SI (puedeSalir = falso) ENTONCES mostrar "Debe registrar ingreso primero"
+-	Confirmación de Identidad
+-	SI (usuario confirma) ENTONCES registrar acceso
+-	SI NO ENTONCES limpiar campo Y solicitar nuevo intento
+-	Persistencia de Datos.
+-	SI (operación exitosa) ENTONCES guardar en archivo Y actualizar interfaz
+
+
+# Fase V: 
